@@ -1,0 +1,31 @@
+# Task List: Capture the Flag App
+
+- [x] **Planning & Design** <!-- id: 0 -->
+    - [x] Create detailed implementation plan
+    - [x] Design Data Scema for Realtime Sync
+    - [x] Design UI Mockups (Flag Interface & Admin Dashboard)
+- [x] **Project Setup** <!-- id: 1 -->
+    - [x] Initialize Vite + React project
+    - [x] Configure Firebase (Realtime Database & Hosting)
+    - [x] Setup basic routing (Admin vs Flag views)
+- [x] **Core Features** <!-- id: 2 -->
+    - [x] Implement Admin Dashboard (Timer controls, Game State)
+    - [x] Implement Flag Interface (Touch interactions, UI Layout)
+    - [x] Build "Game Loop" Logic (Score calculation, Sync)
+    - [x] Handle End Game State ("Time's Up" screen)
+    - [x] **Refactor**: Multi-Base Logic (4 Independent Bases)
+    - [x] **Refactor**: Hold-to-Capture (10s Client-Side Logic)
+    - [x] **Simulation Tooling**
+        - [x] Build Web-based Simulator (Virtual Flags) to test without phones
+
+- [ ] **Polishing** <!-- id: 3 -->
+    - [x] Add visual effects (progress bars, capture animations)
+    - [ ] Conduct multi-device testing
+    - [x] Finalize "Premium" Aesthetics (Admin Dashboard)
+    - [x] Implement Navigation Sidebar (Admin, Flag, Simulator)
+    - [x] Implement Real-time Score Pie Chart (Flag Interface)
+    - [x] Implement Vignette Pulse Animation (Flag Interface)
+    - [x] Implement Vignette Pulse Animation (Flag Interface)
+    - [x] Switch Mobile App & Simulator to Landscape Mode
+    - [x] Refine Pie Chart Order & Vignette Intensity
+    - [ ] Rename Project in package.json

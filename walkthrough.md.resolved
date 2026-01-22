@@ -1,0 +1,42 @@
+# Capture the Flag App - Walkthrough
+
+## Overview
+I have built a complete **Capture the Flag** web application using React and Firebase Realtime Database. The app functions as a distributed game system where "Flag" devices synchronize with a central "Admin" console.
+
+### Key Features
+1.  **Zero-Sum Scoring**: 4 Teams (Red, Green, Blue, Yellow). Total score is always 100%. Holding a flag increases that color's score while draining others.
+2.  **Real-Time Sync**: Updates happen within milliseconds across all devices.
+3.  **Admin Dashboard**: Central control for Game Timer, Reset, and Score Visualization.
+4.  **Simulator**: A built-in testing tool to simulate 4 players from a single screen.
+
+## How to Run
+1.  **Install Dependencies**:
+    ```bash
+    npm install
+    ```
+2.  **Configure Firebase**:
+    *   Go to [src/lib/firebase.ts](file:///Users/sotiris/.gemini/antigravity/brain/d8121d44-bd00-49d3-86f1-c5f9befa0260/src/lib/firebase.ts).
+    *   Replace the placeholder `firebaseConfig` with your actual Firebase project keys.
+    *   Ensure "Realtime Database" is enabled in your Firebase Console.
+3.  **Start the App**:
+    ```bash
+    npm run dev
+    ```
+4.  **Open in Browser**:
+    *   **Home**: `http://localhost:5173/`
+    *   **Admin**: `http://localhost:5173/admin`
+    *   **Simulator**: `http://localhost:5173/simulator`
+    *   **Flag (Real Phone)**: `http://localhost:5173/flag` (Access via Network IP on phone)
+
+## How to Play (Demo)
+1.  Open **Admin Dashboard** in one tab.
+2.  Open **Simulator** in another tab side-by-side.
+3.  In Admin, set duration to `5` minutes and click **START NEW GAME**.
+4.  In Simulator, click and hold "RED" on the first virtual phone.
+5.  Watch the Admin graph: Red bar grows, others shrink.
+6.  Try holding multiple colors at once to see them compete.
+
+## Project Structure
+*   [src/pages/FlagInterface.tsx](file:///Users/sotiris/.gemini/antigravity/brain/d8121d44-bd00-49d3-86f1-c5f9befa0260/src/pages/FlagInterface.tsx): The mobile touch interface.
+*   [src/pages/AdminDashboard.tsx](file:///Users/sotiris/.gemini/antigravity/brain/d8121d44-bd00-49d3-86f1-c5f9befa0260/src/pages/AdminDashboard.tsx): The main game loop and visualization.
+*   [src/hooks/useGame.ts](file:///Users/sotiris/.gemini/antigravity/brain/d8121d44-bd00-49d3-86f1-c5f9befa0260/src/hooks/useGame.ts): The core logic handling Firebase synchronization.

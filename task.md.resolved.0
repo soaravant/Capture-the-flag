@@ -1,0 +1,19 @@
+# Task List: Capture the Flag App
+
+- [ ] **Planning & Design** <!-- id: 0 -->
+    - [ ] Create detailed implementation plan
+    - [ ] Design Data Scema for Realtime Sync
+    - [ ] Design UI Mockups (Flag Interface & Admin Dashboard)
+- [ ] **Project Setup** <!-- id: 1 -->
+    - [ ] Initialize Vite + React project
+    - [ ] Configure Firebase (Realtime Database & Hosting)
+    - [ ] Setup basic routing (Admin vs Flag views)
+- [ ] **Core Features** <!-- id: 2 -->
+    - [ ] Implement Admin Dashboard (Timer controls, Game State)
+    - [ ] Implement Flag Interface (Touch interactions, UI Layout)
+    - [ ] Build "Game Loop" Logic (Score calculation, Sync)
+    - [ ] Handle End Game State ("Time's Up" screen)
+- [ ] **Polishing** <!-- id: 3 -->
+    - [ ] Add visual effects (progress bars, capture animations)
+    - [ ] Conduct multi-device testing
+    - [ ] Finalize "Premium" Aesthetics
